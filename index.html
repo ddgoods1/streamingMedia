@@ -8,6 +8,7 @@
     <title>MuzakMaker- Smooth Jazz</title>
   </head>
   <body>
+    <div class="header-order">
     <header>
       <h1>Smooth Jazz</h1>
       <p>
@@ -16,27 +17,19 @@
         1980s and early 1990s.
       </p>
     </header>
-    <nav>
-      <h2>Main Navigation</h2>
+    <nav class="main-nav">
+      <!-- <h2>Main Navigation</h2> -->
       <input type="checkbox" id="dropdown">
       <label for="dropdown"><span></span></label>
-      <ul>
-        <li><a href="#home">MuzakMaker</a></li>
-        <li>
-          <a href="#trending">Trending <br>Songs</a>
-        </li>
-        <li>
-          <a href="#playlists">Your <br>Playlists</a>
-        </li>
-        <li>
-          <a href="#curated">Curated <br>Playlists</a>
-        </li>
-        <li>
-          <a href="user"
-            ><img src="images/duke-silver.png" alt="user profile picture"></a>
-        </li>
+      <ul class="nav-list">
+        <li class="home-link"><a href="#home">MuzakMaker</a></li>
+        <li><a href="#trending">Trending <br>Songs</a></li>
+        <li><a href="#playlists">Your <br>Playlists</a></li>
+        <li><a href="#curated">Curated <br>Playlists</a></li>
+        <li><a href="user"><img src="images/duke-silver.png" alt="user profile picture"></a></li>
       </ul>
     </nav>
+  </div>
 
     <main class="main-column">
       <section id="trending">
@@ -79,13 +72,15 @@
           </section>
 
           <section>
+            <div>
             <h3>Smoothies</h3>
             <dl>
               <dt>Artist</dt>
               <dd>Black Rhomb</dd>
             </dl>
+            </div>
             <img src="images/smoothies-cover.png" alt="smoothie pic">
-            <audio src="audio/smoothies.mp3"></audio>
+            <audio controls src="audio/smoothies.mp3"></audio>
           </section>
           <section>
             <div>
@@ -104,7 +99,7 @@
 
       <section id="playlists" class="mainsections">
         <h2 class="sectiontitle">Your Playlists</h2>
-        <div id="scroll" class="scroll playlist">
+        <div id="scroll" class="scroll yourplaylist">
           <section class="indplaylist ypsubcolor">
             <div>
               <h3 class="position">Best of 2020</h3>
