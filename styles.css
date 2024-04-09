@@ -221,6 +221,10 @@ header p {
     height: 60px;
 }
 
+nav h2 {
+    visibility: hidden;
+}
+
 @media screen and (min-width:834px) {
     body {
         padding: 0 5%;
@@ -542,10 +546,6 @@ audio::-webkit-media-controls-enclosure {
     flex-direction: column;
     place-items: center;
     width: 150px;
-}
-
-.indplaylist h3 {
-    
 }
 
 .banner {
